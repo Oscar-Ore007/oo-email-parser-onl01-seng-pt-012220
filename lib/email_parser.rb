@@ -9,7 +9,7 @@ attr_accessor :emails
 def initialize(email)
   @emails = email
 end
-binding.pry
+
 def parse
   emails.delete(',').split.uniq
 end
